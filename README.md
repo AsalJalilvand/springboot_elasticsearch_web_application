@@ -1,4 +1,11 @@
 # Spring Boot Hello Wrold with Elasticsearch and Thymeleaf
+[![Generic badge](https://img.shields.io/badge/Java->%3D1.8-green)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/springboot-2.3-green)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/tomcat-9.0.37-green)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/elasticsearch-7.10-green)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/kibana-7.10-green)](https://shields.io/)
+
+
 
 This is a started project for building a web application with Spring Boot, Elasticsearch and Thymeleaf.
 
@@ -69,6 +76,8 @@ change the confing in Esconfig file.
 and running. Have a look at this [discussion](https://discuss.elastic.co/t/embed-dashboard-or-visualization-on-an-external-web-page-with-specified-filters/133961/2) to see how to do it. You must have
 created the dashboard/charts beforehand. In the screenshot, I have already added
 a few articles and created a dashboard.
+
+![](https://raw.githubusercontent.com/AsalJalilvand/springboot_elasticsearch_web_application/master/screenshot.PNG)
 
 If you had any problems, perhaps follow the install 
 guide on [spring boot tutorial](https://hellokoding.com/spring-boot-hello-world-example-with-jsp/
