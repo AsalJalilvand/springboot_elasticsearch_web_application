@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Search</title>
+    </head>
+    <body>
+        <h1>Search for an article</h1>
+         <form role="form" th:attr="action=@{/search}" method="post">
+            Title  <input type="text" name="title" placeholder="title..." ><br><br>
+            Author(s) <input type="text" name="author" placeholder="author(s)..." > 
+            <br>*separate multiple authors with "," (no space between "," and names)<br><br>
+            Publisher <input type="text" name="publisher" placeholder="publication..." ><br><br>
+            Publication Type <input type="text" name="pub_type" placeholder="type..." ><br><br>
+            Year <input type="text" name="year" placeholder="year..." ><br><br>
+            Abstract <input type="text" name="abstract" placeholder="abstract..."><br><br> 
+            Tags <input type="text" name="tags" placeholder="tags..." > 
+            <br>*separate multiple tags with ","<br><br>
+            ISBN <input type="text" name="isbn" placeholder="isbn..."> <br/><br/>
+            <button name="search" type="submit" >Search</button>
+            <br/><br/>
+        </form>
+        <form role="form" th:attr="action=@{/search/all}" method="post">
+            <button type="submit" >Display all documents</button>
+        </form>
+            <h3>Results</h3>
+            <p th:text="${message}"></p> <br><br>
+            <form role="form" th:attr="action=@{/search}" method="post">
+                        <table border="1">
+                                <tr th:each="article : ${articles}">
+                                    <td id="term0"><span th:utext="${article.value}"</td>
+                                    <td><button name="update" type="submit" th:attr="value=${article.key}" />update</button></td>
+                                    <td><button name="delete" type="submit" th:attr="value=${article.key}" />delete</button></td>
+                                </tr>                                
+                        </table>   
+                    </form>
+                       <br><br>
+            <a href="/">Home</a>
+    </body>
+</html>

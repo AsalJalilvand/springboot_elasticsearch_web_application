@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Document Insert</title>
+    </head>
+    <body>
+        <h1>Insert a new article!</h1>
+        <form role="form" th:attr="action=@{/insert}" method="post">
+            Title  <input type="text" name="title" placeholder="title..." ><br><br>
+            Author(s) <input type="text" name="author" placeholder="author(s)..." > 
+            <br>*separate multiple authors with "," (no space between "," and names)<br><br>
+            Publisher <input type="text" name="publisher" placeholder="publisher..." ><br><br>
+            Publication Type <input type="text" name="pub_type" placeholder="type..." ><br><br>
+            Year <input type="text" name="year" placeholder="year..." ><br><br>
+            Abstract <input type="text" name="abstract" placeholder="abstract..."><br><br> 
+            Tags <input type="text" name="tags" placeholder="tags..." > 
+            <br>*separate multiple tags with ","<br><br>
+            ISBN <input type="text" name="isbn" placeholder="isbn..."> <br><br>
+            <button type="submit" >Insert</button>
+        </form>
+            <br><br>
+            <p th:utext="${message}"></p>
+            <br><br>
+            <a href="/">Home</a>
+    </body>
+</html>
