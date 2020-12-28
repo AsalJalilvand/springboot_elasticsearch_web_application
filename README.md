@@ -84,7 +84,7 @@ guide on [spring boot tutorial](https://hellokoding.com/spring-boot-hello-world-
 ).
 
 ## Maintenance
-I made this project in around September 2018 when I was learning about working with Elasticsearch and 
+I made this project around September 2018 when I was learning about working with Elasticsearch and 
 Spring Boot. I used this [tutorial](https://hellokoding.com/spring-boot-hello-world-example-with-jsp/
 ) as a starting point for Spring Boot. For Elasticsearch part, I've used [Bealdung's tutorial](https://www.baeldung.com/spring-data-elasticsearch-tutorial).
 Since the Spring Data Elasticsearch's API has changed a lot since the first time I made
